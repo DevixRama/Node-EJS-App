@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Improved UI</title>
+</head>
+
+<body class="flex m-10 bg-gradient-to-r from-blue-500 to-indigo-600">
+
+    <div class="container bg-white/30 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl shadow-blue-300/50 w-96 text-gray-900">
+        <!-- Name Section with Icon -->
+        <div class="flex items-center space-x-3">
+            <svg class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 0110 14h4a4 4 0 014.879 3.804M12 14a4 4 0 100-8 4 4 0 000 8z" />
+            </svg>
+            <h1 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-500"><%= name %></h1>
+        </div>
+
+        <!-- Paragraph with Icon -->
+        <div class="flex items-center space-x-3 mt-4">
+            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8M8 12h8m-8-4h8M4 6h16M4 18h16" />
+            </svg>
+            <p class="text-lg text-gray-100 leading-relaxed"><%= data %></p>
+        </div>
+
+        <!-- Go Back Button with Arrow Icon -->
+        <a class="mt-6 flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:scale-105 transition-all duration-300 ease-in-out block text-center"
+            href="/">
+            <svg class="w-5 h-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h14" />
+            </svg>
+            Go back
+        </a>
+    </div>
+
+</body>
+
+</html>

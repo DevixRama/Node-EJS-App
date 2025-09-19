@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Edit Name</title>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
+
+    <div class="w-full max-w-md p-8 bg-white shadow-lg rounded-xl">
+        <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Edit Your Name</h2>
+        <form action="/edit" method="post">
+            <label class="block mb-2 text-gray-700 font-medium">Previous Name</label>
+            <input class="block w-full px-4 py-2 mb-4 rounded-md bg-gray-100 focus:ring-2 focus:ring-blue-400 outline-none" type="text" placeholder="Previous Name" value="<%= name %>" name="previous" required>
+            
+            <label class="block mb-2 text-gray-700 font-medium">New Name</label>
+            <input class="block w-full px-4 py-2 mb-6 rounded-md bg-gray-100 focus:ring-2 focus:ring-blue-400 outline-none" type="text" placeholder="New Name" name="new" required>
+            
+            <button class="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300" type="submit">Update Name</button>
+        </form>
+        
+        <div class="text-center mt-4">
+            <a class="text-blue-600 hover:underline" href="/">&#8592; Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html>
